@@ -10,7 +10,7 @@ import { PromptResponseService } from './prompt-response/prompt-response.service
 
 @Module({
   imports: [
-    MongooseModule.forRoot('mongodb+srv://gsayan999:wGnsflgGULP2Bv4u@cluster0.c2wtyjf.mongodb.net/?retryWrites=true&w=majority', {
+    MongooseModule.forRoot(process.env.DB_URL, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     } as any),

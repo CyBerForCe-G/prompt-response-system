@@ -2,7 +2,6 @@
 import { Injectable } from '@nestjs/common';
 import { PromptResponseService } from './prompt-response/prompt-response.service';
 import { PromptResponse } from './prompt-response/prompt-response.model';
-import { promises } from 'dns';
 
 @Injectable()
 export class AppService {
